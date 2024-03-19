@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/logo.png" type="icon">
+</head>
+<body style="background-color: #a54b63;" >
+    <div class="container">
+        <div id="timer"></div>
+        <h1 >Memory Game</h1>
+        <div id="game-board" class="game-board"></div>
+        <button class="restart-button" onclick="restartGame()">Restart</button>
+    </div>
+    <audio id="bg" src="./audio/game.mp3" autoplay></audio> 
+    <audio id="click" src="./audio/flip.mp3"></audio>
+    <audio id="crt" src="./audio/crt.mp3"></audio>
+    <audio id="wrng" src="./audio/wrng.mp3"></audio>   
+    <script src="easy.js"></script>
+    <script src="scores.js"></script>
+    <script>
+        function playa() {
+            const a = document.getElementById("bg");
+            a.play();
+        }
+    </script>
+    <script>
+        function crt() {
+            document.getElementById("crt").play();
+        }
+
+        function wrng() {
+            document.getElementById("wrng").play();
+        }
+    </script>
+</body>
+</html>

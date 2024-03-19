@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>congarts</title>
+    <link rel="stylesheet" href="s.css">
+    <link rel="icon" href="./assets/logo.png" type="icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Congratulations!!</h1>
+        <h5>You Have A Great Memory!!</h5> 
+        <div id="score"></div>
+        <button class="play-again-button" onclick="startGame()">Play Again</button>
+    </div>
+    <audio id="bg" src="./audio/success.mp3" autoplay></audio>    
+    <script src="scores.js"></script>
+    <script>
+        function playa() {
+            const a = document.getElementById("bg");
+            a.play();
+        }
+    </script>
+    <script>
+        function startGame() {
+            window.location.href = "starting.html";
+        }
+    </script>
+</body>
+</html>

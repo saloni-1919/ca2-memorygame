@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game </title>
+    <link rel="stylesheet" href="s.css">
+    <link rel="icon" href="./assets/logo.png" type="icon">
+</head>
+<body  onload="playAudio()">
+    <header style="position: fixed; top: 0; left: 0; width: 100%; color: #151414; padding: 10px; text-align: right;">
+        Note: Make sure your browser has permission to autoplay sounds to hear the game audio, only then the game sounds can be audible.
+    </header>
+    <div class="container">
+        <h1>Memory Game</h1>
+        <button onclick="openPopup()">Play Game</button>
+    </div>
+    <audio id="bg" src="./audio/start.mp3" autoplay></audio>
+    <audio id="clickSound" src="./audio/flip.mp3"></audio>
+    <script src="starting.js"></script>
+    <script>
+        function playa() {
+            const a = document.getElementById("bg");
+            a.play();
+        }
+    </script>
+</body>
+</html>
